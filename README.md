@@ -10,10 +10,15 @@ author：kyshen
 
 https://gitee.com/kyshen/dsss
 
+![](./take a look.png)
+
 ## 说明
 
 实验开发板：xc7a35tlftg256-2L
 
 开发环境：Vivado 2017.4
 
-文件夹"./project"存放项目工程文件
+文件夹"./project"存放项目工程文件，包括源代码等
+
+Introduction为项目介绍
+
