@@ -16,7 +16,8 @@ https://gitee.com/kyshen/dsss
 
 开发环境：Vivado 2017.4
 
-文件夹"./project"存放项目工程文件，包括源代码等
+文件夹project存放项目工程文件，包括源代码等
 
 Introduction为项目介绍
 
+另外附有图片一张
