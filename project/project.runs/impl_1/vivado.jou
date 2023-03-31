@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jun  1 23:59:16 2022
+# Process ID: 21088
+# Current directory: E:/vivado_files/test_module/test_module.runs/impl_1
+# Command line: vivado.exe -log test_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source test_top.tcl -notrace
+# Log file: E:/vivado_files/test_module/test_module.runs/impl_1/test_top.vdi
+# Journal file: E:/vivado_files/test_module/test_module.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source test_top.tcl -notrace

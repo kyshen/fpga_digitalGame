@@ -1,0 +1,142 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Jun  1 23:59:46 2022
+| Host         : LAPTOP-63KSL160 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file test_top_control_sets_placed.rpt
+| Design       : test_top
+| Device       : xc7a35tl
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    74 |
+| Unused register locations in slices containing registers |   185 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             271 |           98 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             453 |          120 |
+| Yes          | No                    | No                     |             154 |           31 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             241 |           64 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+----------------------------------------------------------+--------------------------------------------------------------------+------------------+----------------+
+|                 Clock Signal                 |                       Enable Signal                      |                          Set/Reset Signal                          | Slice Load Count | Bel Load Count |
++----------------------------------------------+----------------------------------------------------------+--------------------------------------------------------------------+------------------+----------------+
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_Adder_u/KeyIn_u/keyboard_u/data51                 | MODULE_Adder_u/KeyIn_u/keyboard_u/data510_out                      |                1 |              1 |
+|  clk_sys_IBUF_BUFG                           | Buzzer_i_1__4_n_0                                        |                                                                    |                1 |              1 |
+|  led_disp_u/disp_data_reg[3]_i_2_n_0         |                                                          |                                                                    |                1 |              4 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_1_u/Judge2_u/keyboard_u/E[0]                      | MODULE_1_u/Judge2_u/keyboard_u/Key_out_reg[7]_0                    |                1 |              4 |
+|  clk4led_reg_n_0                             |                                                          | MODULE_2_u/SR[0]                                                   |                1 |              4 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_Adder_u/KeyIn_u/keyboard_u/E[0]                   | MODULE_Adder_u/KeyIn_u/keyboard_u/SS[0]                            |                2 |              4 |
+|  clk_test_reg_n_0_BUFG                       | MODULE_1_u/get_rand1_u/rand1_u2/reg_2bit_u/data_reg[3]   | MODULE_1_u/get_rand1_u/Keyboard/Key_out_reg[0]_0                   |                1 |              4 |
+|  clk_test_reg_n_0_BUFG                       | MODULE_1_u/get_rand1_u/rand1_u1/reg_2bit_u/data_reg[3]   | MODULE_1_u/get_rand1_u/Keyboard/Key_out_reg[0]_0                   |                1 |              4 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_1_u/add10_u/reg_S_u/SR[0]                                   |                2 |              4 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_2_u/Judge3_u/keyboard_u/data1_reg[0][0]           | MODULE_2_u/Judge3_u/keyboard_u/Key_out_reg[7]_0                    |                1 |              4 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_2_u/Judge3_u/keyboard_u/data2_reg[0][0]           | MODULE_2_u/Judge3_u/keyboard_u/Key_out_reg[7]_0                    |                1 |              4 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_2_u/Judge3_u/keyboard_u/E[0]                      | MODULE_2_u/Judge3_u/keyboard_u/Key_out_reg[7]_0                    |                1 |              4 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_Adder_u/KeyIn_u/keyboard_u/data5_reg[0][0]        | MODULE_Adder_u/KeyIn_u/keyboard_u/SS[0]                            |                1 |              4 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_Adder_u/KeyIn_u/keyboard_u/data0_reg[0][0]        | MODULE_Adder_u/KeyIn_u/keyboard_u/SS[0]                            |                1 |              4 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_Adder_u/KeyIn_u/keyboard_u/data4_reg[0][0]        | MODULE_Adder_u/KeyIn_u/keyboard_u/SS[0]                            |                2 |              4 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_2_u/add10_u/reg_S_u/SR[0]                                   |                1 |              4 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_Adder_u/add10_u/reg_S_u/SR[0]                               |                1 |              4 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_Adder_u/KeyIn_u/keyboard_u/data3_reg[0][0]        | MODULE_Adder_u/KeyIn_u/keyboard_u/SS[0]                            |                1 |              4 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_Adder_u/KeyIn_u/keyboard_u/data1_reg[0][0]        | MODULE_Adder_u/KeyIn_u/keyboard_u/SS[0]                            |                1 |              4 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_1_u/get_rand1_u/Keyboard/E[0]                     |                                                                    |                1 |              4 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_1_u/Judge2_u/keyboard_u/data1_reg[0][0]           | MODULE_1_u/Judge2_u/keyboard_u/Key_out_reg[7]_0                    |                2 |              4 |
+|  MODULE_2_u/Buzzer_shine_u/Buzzer_Mozart/clk |                                                          | MODULE_2_u/Buzzer_shine_u/Buzzer_Mozart/timer[4]_i_1__1_n_0        |                1 |              5 |
+|  MODULE_1_u/Buzzer_shine_u/Buzzer_Mozart/clk |                                                          | MODULE_1_u/Buzzer_shine_u/Buzzer_Mozart/timer[4]_i_1__2_n_0        |                1 |              5 |
+|  clk_sys_IBUF_BUFG                           | light_shine_i_1_n_0                                      |                                                                    |                2 |              5 |
+|  clk_sys_IBUF_BUFG                           |                                                          | sw9_IBUF                                                           |                2 |              5 |
+|  clk_test_reg_n_0_BUFG                       | MODULE_2_u/get_rand2_u/rand1_u2/reg_2bit_u/data_reg[7]_0 | MODULE_2_u/get_rand2_u/Keyboard/Key_out_reg[0]_1                   |                2 |              7 |
+|  clk_test_reg_n_0_BUFG                       | MODULE_2_u/get_rand2_u/rand1_u1/reg_2bit_u/data_reg[7]_0 | MODULE_2_u/get_rand2_u/Keyboard/Key_out_reg[0]_1                   |                1 |              7 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_2_u/Timer_u/timer_0                               | MODULE_2_u/Timer_u/timer[6]_i_1_n_0                                |                3 |              7 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_1_u/Timer_u/timer_0                               | MODULE_1_u/Timer_u/timer[6]_i_1__0_n_0                             |                2 |              7 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_2_u/get_rand2_u/Keyboard/Key_out_reg[0]_0         | MODULE_2_u/Judge3_u/keyboard_u/Key_out_reg[7]_0                    |                2 |              8 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_2_u/get_rand2_u/Keyboard/Key_out_reg[0]_0         | MODULE_2_u/get_rand2_u/Keyboard/Key_out_reg[0]_1                   |                1 |              8 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_2_u/get_rand2_u/Keyboard/Key_out_reg[0]_0         | MODULE_Adder_u/KeyIn_u/keyboard_u/Key_out[7]_i_1_n_0               |                2 |              8 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_2_u/get_rand2_u/Keyboard/E[0]                     |                                                                    |                2 |              8 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_2_u/add10_u/reg_B_u/b_reg[0]_0                              |                2 |              8 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_1_u/add10_u/reg_A_u/a_reg[3]_0                              |                2 |              8 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_Adder_u/add10_u/count_reg_n_0_[3]                           |                3 |              8 |
+|  clk_sys_IBUF_BUFG                           | MODULE_1_u/add10_u/reg_S_u/SR[0]                         |                                                                    |                1 |              8 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_2_u/get_rand2_u/Keyboard/Key_out_reg[0]_0         | MODULE_1_u/Judge2_u/keyboard_u/Key_out_reg[7]_0                    |                2 |              8 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_2_u/get_rand2_u/Keyboard/Key_out_reg[0]_0         | MODULE_1_u/get_rand1_u/Keyboard/Key_out_reg[0]_0                   |                2 |              8 |
+|  clk_1ms_reg_n_0_BUFG                        |                                                          | MODULE_1_u/get_rand1_u/Keyboard/Key_out_reg[0]_0                   |                4 |             10 |
+|  clk_1ms_reg_n_0_BUFG                        |                                                          | MODULE_1_u/Timer_u/count[10]_i_1__0_n_0                            |                4 |             11 |
+|  clk_1ms_reg_n_0_BUFG                        |                                                          | MODULE_2_u/Timer_u/count[10]_i_1_n_0                               |                3 |             11 |
+|  clk_sys_IBUF_BUFG                           | MODULE_1_u/add10_u/reg_S_u/S_temp[23]_i_1__1_n_0         |                                                                    |                3 |             12 |
+|  clk_sys_IBUF_BUFG                           | MODULE_2_u/add10_u/reg_S_u/SR[0]                         |                                                                    |                2 |             12 |
+|  clk_sys_IBUF_BUFG                           | MODULE_2_u/add10_u/reg_S_u/S_temp[23]_i_1_n_0            |                                                                    |                3 |             16 |
+|  clk_1ms_reg_n_0_BUFG                        |                                                          | MODULE_2_u/get_rand2_u/Keyboard/Key_out_reg[0]_1                   |                3 |             19 |
+|  clk_sys_IBUF_BUFG                           | MODULE_1_u/Buzzer_shine_u/EN_Mozart_reg_n_0              | MODULE_1_u/Buzzer_shine_u/Buzzer_Mozart/Buzzer_u/cnt[0]_i_1__3_n_0 |                5 |             20 |
+|  clk_sys_IBUF_BUFG                           | MODULE_1_u/EN_timer                                      | MODULE_1_u/Buzzer_shine_u/Buzzer_u0/cnt[0]_i_1__4_n_0              |                5 |             20 |
+|  clk_sys_IBUF_BUFG                           | MODULE_1_u/EN_timer                                      | MODULE_1_u/Buzzer_shine_u/Buzzer_u/cnt[0]_i_1__2_n_0               |                5 |             20 |
+|  clk_sys_IBUF_BUFG                           | MODULE_2_u/Buzzer_shine_u/EN_Mozart_reg_n_0              | MODULE_2_u/Buzzer_shine_u/Buzzer_Mozart/Buzzer_u/cnt[0]_i_1__0_n_0 |                5 |             20 |
+|  clk_sys_IBUF_BUFG                           | MODULE_2_u/EN_Buzzer                                     | MODULE_2_u/Buzzer_shine_u/Buzzer_u0/cnt[0]_i_1__1_n_0              |                5 |             20 |
+|  clk_sys_IBUF_BUFG                           | MODULE_2_u/EN_Buzzer                                     | MODULE_2_u/Buzzer_shine_u/Buzzer_u/cnt[0]_i_1_n_0                  |                5 |             20 |
+|  clk_sys_IBUF_BUFG                           |                                                          | clk_test                                                           |                6 |             23 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_2_u/Buzzer_shine_u/Buzzer_Mozart/clk_250ms                  |                6 |             23 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_2_u/Buzzer_shine_u/clk_500ms_4                              |                6 |             23 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_2_u/Buzzer_shine_u/clk_60ms_10                              |                6 |             23 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_1_u/Buzzer_shine_u/clk_500ms_3                              |                6 |             23 |
+|  clk_sys_IBUF_BUFG                           |                                                          | clk_1ms                                                            |                6 |             23 |
+|  clk_sys_IBUF_BUFG                           |                                                          | clk4led                                                            |                6 |             23 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_1_u/Buzzer_shine_u/clk_60ms_9                               |                6 |             23 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_1_u/Buzzer_shine_u/clk_125ms_7                              |                6 |             23 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_1_u/Buzzer_shine_u/clk_250ms_5                              |                6 |             23 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_1_u/Buzzer_shine_u/Buzzer_Mozart/clk_250ms                  |                6 |             23 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_2_u/Buzzer_shine_u/clk_250ms_6                              |                6 |             23 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_2_u/Buzzer_shine_u/clk_125ms_8                              |                6 |             23 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_2_u/Buzzer_shine_u/clk_750ms_2                              |                6 |             24 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_Adder_u/KeyIn_u/ENs[1]                            |                                                                    |                5 |             24 |
+|  clk_sys_IBUF_BUFG                           |                                                          | MODULE_1_u/Buzzer_shine_u/clk_750ms_1                              |                6 |             24 |
+|  clk_sys_IBUF_BUFG                           | MODULE_Adder_u/add10_u/reg_S_u/SR[0]                     |                                                                    |                4 |             24 |
+|  clk_sys_IBUF_BUFG                           | MODULE_Adder_u/add10_u/reg_S_u/S_temp[23]_i_1__0_n_0     |                                                                    |                4 |             24 |
+|  clk_1ms_reg_n_0_BUFG                        | MODULE_Adder_u/KeyIn_u/ENs[2]                            |                                                                    |                5 |             24 |
+|  clk_test_reg_n_0_BUFG                       |                                                          |                                                                    |               10 |             34 |
+|  clk_sys_IBUF_BUFG                           |                                                          |                                                                    |               45 |             94 |
+|  clk_1ms_reg_n_0_BUFG                        |                                                          |                                                                    |               42 |            139 |
++----------------------------------------------+----------------------------------------------------------+--------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 4      |                    19 |
+| 5      |                     4 |
+| 7      |                     4 |
+| 8      |                    10 |
+| 10     |                     1 |
+| 11     |                     2 |
+| 12     |                     2 |
+| 16+    |                    30 |
++--------+-----------------------+
+
+

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tlftg256-2L" LaunchTime="1654099092">
+  <File Type="PA-TCL" Name="test_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="test_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="test_top.vds"/>
+  <File Type="RDS-UTIL" Name="test_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="test_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="test_top.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Buzzer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer.v"/>
+        <Attr Name="ImportTime" Val="1654072936"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Buzzer_Mozart.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer_Mozart.v"/>
+        <Attr Name="ImportTime" Val="1654083306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Buzzer_shine.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer_shine.v"/>
+        <Attr Name="ImportTime" Val="1654080964"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Compare2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/Compare2.v"/>
+        <Attr Name="ImportTime" Val="1653888931"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Compare3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/Compare3.v"/>
+        <Attr Name="ImportTime" Val="1654024745"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Judge2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/Judge2.v"/>
+        <Attr Name="ImportTime" Val="1654024467"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Judge3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/Judge3.v"/>
+        <Attr Name="ImportTime" Val="1654025225"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/KEYNUM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/KEYNUM.v"/>
+        <Attr Name="ImportTime" Val="1653534556"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/KeyIn.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/KeyIn.v"/>
+        <Attr Name="ImportTime" Val="1654060594"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MODULE_1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_1.v"/>
+        <Attr Name="ImportTime" Val="1654084698"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MODULE_2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_2.v"/>
+        <Attr Name="ImportTime" Val="1654081286"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MODULE_Adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_Adder.v"/>
+        <Attr Name="ImportTime" Val="1654105571"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Timer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/Timer.v"/>
+        <Attr Name="ImportTime" Val="1654020167"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/add10.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/add10.v"/>
+        <Attr Name="ImportTime" Val="1654105571"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/get_rand1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/get_rand1.v"/>
+        <Attr Name="ImportTime" Val="1654015833"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/get_rand2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/get_rand2.v"/>
+        <Attr Name="ImportTime" Val="1654022252"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/keyboard.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v"/>
+        <Attr Name="ImportTime" Val="1654099090"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/led_disp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/led_disp.v"/>
+        <Attr Name="ImportTime" Val="1653128843"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rand1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/rand1.v"/>
+        <Attr Name="ImportTime" Val="1654022177"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rand2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/rand2.v"/>
+        <Attr Name="ImportTime" Val="1654024047"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/reg_24bit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/reg_24bit.v"/>
+        <Attr Name="ImportTime" Val="1653736618"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/reg_2bit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/reg_2bit.v"/>
+        <Attr Name="ImportTime" Val="1654099090"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/reg_4bit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/reg_4bit.v"/>
+        <Attr Name="ImportTime" Val="1653402294"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/test_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/test_top.v"/>
+        <Attr Name="ImportTime" Val="1654105571"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/add_ALL.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/add_ALL.v"/>
+        <Attr Name="ImportTime" Val="1653723812"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/reg_1bit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/sources_1/new/reg_1bit.v"/>
+        <Attr Name="ImportTime" Val="1653720108"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="test_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/cons.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vivado_files/test_module/test_module.srcs/constrs_1/new/cons.xdc"/>
+        <Attr Name="ImportTime" Val="1654076088"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

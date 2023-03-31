@@ -1,0 +1,929 @@
+
+*** Running vivado
+    with args -log test_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_top.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source test_top.tcl -notrace
+Command: synth_design -top test_top -part xc7a35tlftg256-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35tl'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35tl'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8808 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 346.039 ; gain = 102.648
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_top' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/test_top.v:23]
+	Parameter cnt_number1 bound to: 24'b000000000110000110101000 
+	Parameter cnt_number2 bound to: 24'b000000000000000001111101 
+	Parameter cnt_number3 bound to: 24'b011010101100111111000000 
+INFO: [Synth 8-638] synthesizing module 'MODULE_2' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_2.v:23]
+INFO: [Synth 8-638] synthesizing module 'get_rand2' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/get_rand2.v:23]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_2bit' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/reg_2bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'reg_2bit' (1#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/reg_2bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_4bit' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/reg_4bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'reg_4bit' (2#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/reg_4bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (3#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:23]
+WARNING: [Synth 8-350] instance 'Keyboard' of module 'keyboard' requires 9 connections, but only 5 given [E:/vivado_files/test_module/test_module.srcs/sources_1/new/get_rand2.v:75]
+INFO: [Synth 8-638] synthesizing module 'rand2' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/rand2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'rand2' (4#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/rand2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'get_rand2' (5#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/get_rand2.v:23]
+INFO: [Synth 8-638] synthesizing module 'Judge3' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Judge3.v:23]
+INFO: [Synth 8-638] synthesizing module 'KEYNUM' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/KEYNUM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'KEYNUM' (6#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/KEYNUM.v:23]
+INFO: [Synth 8-638] synthesizing module 'Compare3' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Compare3.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Compare3' (7#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Compare3.v:23]
+WARNING: [Synth 8-350] instance 'keyboard_u' of module 'keyboard' requires 9 connections, but only 7 given [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Judge3.v:129]
+INFO: [Synth 8-256] done synthesizing module 'Judge3' (8#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Judge3.v:23]
+INFO: [Synth 8-638] synthesizing module 'add10' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_A' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:99]
+INFO: [Synth 8-256] done synthesizing module 'reg_A' (9#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:99]
+INFO: [Synth 8-638] synthesizing module 'reg_B' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:121]
+INFO: [Synth 8-256] done synthesizing module 'reg_B' (10#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:121]
+INFO: [Synth 8-638] synthesizing module 'reg_S' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:142]
+INFO: [Synth 8-256] done synthesizing module 'reg_S' (11#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:142]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sum_reg' and it is trimmed from '5' to '4' bits. [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:39]
+INFO: [Synth 8-4471] merging register 'cin_reg' into 'cout_reg' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:51]
+WARNING: [Synth 8-6014] Unused sequential element cin_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:51]
+INFO: [Synth 8-256] done synthesizing module 'add10' (12#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:23]
+WARNING: [Synth 8-350] instance 'add10_u' of module 'add10' requires 10 connections, but only 4 given [E:/vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_2.v:151]
+INFO: [Synth 8-638] synthesizing module 'Timer' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Timer.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Timer' (13#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Timer.v:23]
+WARNING: [Synth 8-350] instance 'Timer_u' of module 'Timer' requires 4 connections, but only 3 given [E:/vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_2.v:158]
+INFO: [Synth 8-638] synthesizing module 'Buzzer_shine' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer_shine.v:23]
+	Parameter cnt_number1 bound to: 24'b001011111010111100001000 
+	Parameter cnt_number2 bound to: 24'b010111110101111000010000 
+	Parameter cnt_number3 bound to: 24'b101111101011110000100000 
+	Parameter cnt_number4 bound to: 24'b000101111101011110000100 
+	Parameter cnt_number5 bound to: 25'b1000111100001101000110000 
+INFO: [Synth 8-638] synthesizing module 'Buzzer' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer.v:4]
+INFO: [Synth 8-256] done synthesizing module 'Buzzer' (14#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer.v:4]
+INFO: [Synth 8-638] synthesizing module 'Buzzer_Mozart' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer_Mozart.v:23]
+	Parameter cnt_number2 bound to: 24'b010111110101111000010000 
+INFO: [Synth 8-256] done synthesizing module 'Buzzer_Mozart' (15#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer_Mozart.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Buzzer_shine' (16#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer_shine.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MODULE_2' (17#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_2.v:23]
+WARNING: [Synth 8-350] instance 'MODULE_2_u' of module 'MODULE_2' requires 17 connections, but only 16 given [E:/vivado_files/test_module/test_module.srcs/sources_1/new/test_top.v:138]
+INFO: [Synth 8-638] synthesizing module 'MODULE_1' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'get_rand1' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/get_rand1.v:23]
+WARNING: [Synth 8-350] instance 'Keyboard' of module 'keyboard' requires 9 connections, but only 5 given [E:/vivado_files/test_module/test_module.srcs/sources_1/new/get_rand1.v:75]
+INFO: [Synth 8-638] synthesizing module 'rand1' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/rand1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'rand1' (18#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/rand1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'get_rand1' (19#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/get_rand1.v:23]
+INFO: [Synth 8-638] synthesizing module 'Judge2' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Judge2.v:23]
+INFO: [Synth 8-638] synthesizing module 'Compare2' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Compare2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Compare2' (20#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Compare2.v:23]
+WARNING: [Synth 8-350] instance 'keyboard_u' of module 'keyboard' requires 9 connections, but only 7 given [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Judge2.v:121]
+INFO: [Synth 8-256] done synthesizing module 'Judge2' (21#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Judge2.v:23]
+WARNING: [Synth 8-350] instance 'add10_u' of module 'add10' requires 10 connections, but only 4 given [E:/vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_1.v:149]
+WARNING: [Synth 8-350] instance 'Timer_u' of module 'Timer' requires 4 connections, but only 3 given [E:/vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_1.v:156]
+INFO: [Synth 8-4471] merging register 'EN_Buzzer_reg' into 'EN_timer_reg' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_1.v:71]
+WARNING: [Synth 8-6014] Unused sequential element EN_Buzzer_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_1.v:71]
+INFO: [Synth 8-256] done synthesizing module 'MODULE_1' (22#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_1.v:23]
+WARNING: [Synth 8-350] instance 'MODULE_1_u' of module 'MODULE_1' requires 17 connections, but only 16 given [E:/vivado_files/test_module/test_module.srcs/sources_1/new/test_top.v:157]
+INFO: [Synth 8-638] synthesizing module 'MODULE_Adder' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_Adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'KeyIn' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/KeyIn.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/vivado_files/test_module/test_module.srcs/sources_1/new/KeyIn.v:84]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/vivado_files/test_module/test_module.srcs/sources_1/new/KeyIn.v:94]
+WARNING: [Synth 8-350] instance 'keyboard_u' of module 'keyboard' requires 9 connections, but only 8 given [E:/vivado_files/test_module/test_module.srcs/sources_1/new/KeyIn.v:130]
+INFO: [Synth 8-638] synthesizing module 'reg_24bit' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/reg_24bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'reg_24bit' (23#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/reg_24bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'KeyIn' (24#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/KeyIn.v:23]
+WARNING: [Synth 8-350] instance 'KeyIn_u' of module 'KeyIn' requires 14 connections, but only 13 given [E:/vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_Adder.v:78]
+WARNING: [Synth 8-350] instance 'add10_u' of module 'add10' requires 10 connections, but only 5 given [E:/vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_Adder.v:94]
+INFO: [Synth 8-256] done synthesizing module 'MODULE_Adder' (25#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/MODULE_Adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'led_disp' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/led_disp.v:23]
+WARNING: [Synth 8-567] referenced signal 'data5' should be on the sensitivity list [E:/vivado_files/test_module/test_module.srcs/sources_1/new/led_disp.v:40]
+WARNING: [Synth 8-567] referenced signal 'data4' should be on the sensitivity list [E:/vivado_files/test_module/test_module.srcs/sources_1/new/led_disp.v:40]
+WARNING: [Synth 8-567] referenced signal 'data3' should be on the sensitivity list [E:/vivado_files/test_module/test_module.srcs/sources_1/new/led_disp.v:40]
+WARNING: [Synth 8-567] referenced signal 'data2' should be on the sensitivity list [E:/vivado_files/test_module/test_module.srcs/sources_1/new/led_disp.v:40]
+WARNING: [Synth 8-567] referenced signal 'data1' should be on the sensitivity list [E:/vivado_files/test_module/test_module.srcs/sources_1/new/led_disp.v:40]
+WARNING: [Synth 8-567] referenced signal 'data0' should be on the sensitivity list [E:/vivado_files/test_module/test_module.srcs/sources_1/new/led_disp.v:40]
+WARNING: [Synth 8-567] referenced signal 'data_buf' should be on the sensitivity list [E:/vivado_files/test_module/test_module.srcs/sources_1/new/led_disp.v:64]
+INFO: [Synth 8-256] done synthesizing module 'led_disp' (26#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/led_disp.v:23]
+INFO: [Synth 8-256] done synthesizing module 'test_top' (27#1) [E:/vivado_files/test_module/test_module.srcs/sources_1/new/test_top.v:23]
+WARNING: [Synth 8-3331] design Buzzer_shine has unconnected port clk_1ms
+WARNING: [Synth 8-3331] design test_top has unconnected port testleds[3]
+WARNING: [Synth 8-3331] design test_top has unconnected port testleds[2]
+WARNING: [Synth 8-3331] design test_top has unconnected port testleds[1]
+WARNING: [Synth 8-3331] design test_top has unconnected port sw8
+WARNING: [Synth 8-3331] design test_top has unconnected port sw7
+WARNING: [Synth 8-3331] design test_top has unconnected port sw6
+WARNING: [Synth 8-3331] design test_top has unconnected port sw5
+WARNING: [Synth 8-3331] design test_top has unconnected port sw4
+WARNING: [Synth 8-3331] design test_top has unconnected port sw3
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 398.332 ; gain = 154.941
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 398.332 ; gain = 154.941
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tlftg256-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/vivado_files/test_module/test_module.srcs/constrs_1/new/cons.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ext_rst_n'. [E:/vivado_files/test_module/test_module.srcs/constrs_1/new/cons.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado_files/test_module/test_module.srcs/constrs_1/new/cons.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ext_rst_n'. [E:/vivado_files/test_module/test_module.srcs/constrs_1/new/cons.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado_files/test_module/test_module.srcs/constrs_1/new/cons.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'Buzzer_OBUF'. [E:/vivado_files/test_module/test_module.srcs/constrs_1/new/cons.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado_files/test_module/test_module.srcs/constrs_1/new/cons.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/vivado_files/test_module/test_module.srcs/constrs_1/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/vivado_files/test_module/test_module.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 732.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 732.047 ; gain = 488.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tlftg256-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 732.047 ; gain = 488.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 732.047 ; gain = 488.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "ispress" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Add_num" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "dispdata" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "data0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "S" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cout" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hi" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:41]
+INFO: [Synth 8-5546] ROM "timer" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Timer.v:33]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Timer.v:29]
+INFO: [Synth 8-5546] ROM "tone_div" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer.v:31]
+INFO: [Synth 8-5546] ROM "clk_250ms" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer_Mozart.v:44]
+INFO: [Synth 8-5546] ROM "clk_125ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_250ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_500ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_60ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_750ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_125ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_250ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_500ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_60ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_750ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "dispdata" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "data0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "dispdata" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "data5" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data4" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data4" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ENs" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "clk_1ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_test" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk4led" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'disp_data_reg' [E:/vivado_files/test_module/test_module.srcs/sources_1/new/led_disp.v:67]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 732.047 ; gain = 488.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 2     
+	   2 Input     24 Bit       Adders := 13    
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 15    
+	   3 Input      4 Bit       Adders := 3     
+	   4 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 10    
++---Registers : 
+	               25 Bit    Registers := 2     
+	               24 Bit    Registers := 22    
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 18    
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 68    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 19    
+	                1 Bit    Registers := 64    
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 13    
+	   9 Input     17 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 15    
+	  16 Input      8 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 2     
+	   7 Input      6 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 5     
+	   3 Input      4 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 94    
+	  17 Input      4 Bit        Muxes := 3     
+	   6 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 20    
+	   6 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 40    
+	   3 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 121   
+	   5 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 16    
+	   3 Input      1 Bit        Muxes := 16    
+	   6 Input      1 Bit        Muxes := 3     
+	  13 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module test_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 3     
+	                4 Bit    Registers := 7     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 18    
+	   2 Input      1 Bit        Muxes := 8     
+Module reg_2bit 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module reg_4bit 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 4     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module rand2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module get_rand2 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module KEYNUM 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module Judge3 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 3     
+Module reg_A 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module reg_B 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module reg_S 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module add10 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   4 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Timer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module Buzzer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   9 Input     17 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Buzzer_Mozart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Buzzer_shine 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 4     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 4     
+	  10 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module MODULE_2 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 5     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 5     
+Module rand1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module get_rand1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module Judge2 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module MODULE_1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module reg_24bit 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+Module KeyIn 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+Module MODULE_Adder 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 6     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 12    
+Module led_disp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   7 Input      6 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element reg_24bit_u3/Q_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/reg_24bit.v:36]
+INFO: [Synth 8-5544] ROM "ENs" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "dispdata" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-6014] Unused sequential element get_rand2_u/Keyboard/iskeying_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:98]
+WARNING: [Synth 8-6014] Unused sequential element add10_u/hi_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:55]
+INFO: [Synth 8-5587] ROM size for "Judge3_u/dispdata" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "Timer_u/timer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/Buzzer_u/tone_div" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/Buzzer_Mozart/Buzzer_u/tone_div" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/Buzzer_Mozart/clk_250ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/clk_750ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/clk_500ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/clk_250ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/clk_125ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/clk_60ms" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element get_rand2_u/rand1_u1/count_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/rand2.v:34]
+WARNING: [Synth 8-6014] Unused sequential element get_rand2_u/rand1_u2/count_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/rand2.v:34]
+WARNING: [Synth 8-6014] Unused sequential element add10_u/count_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:41]
+WARNING: [Synth 8-6014] Unused sequential element Timer_u/count_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Timer.v:33]
+WARNING: [Synth 8-6014] Unused sequential element Timer_u/timer_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Timer.v:29]
+WARNING: [Synth 8-6014] Unused sequential element Buzzer_shine_u/Buzzer_u/cnt_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer.v:31]
+WARNING: [Synth 8-6014] Unused sequential element Buzzer_shine_u/Buzzer_Mozart/Buzzer_u/cnt_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer.v:31]
+WARNING: [Synth 8-6014] Unused sequential element Buzzer_shine_u/Buzzer_Mozart/timer_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer_Mozart.v:44]
+WARNING: [Synth 8-6014] Unused sequential element Buzzer_shine_u/Buzzer_u0/cnt_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer.v:31]
+WARNING: [Synth 8-6014] Unused sequential element get_rand1_u/Keyboard/iskeying_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:98]
+WARNING: [Synth 8-6014] Unused sequential element add10_u/hi_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:55]
+INFO: [Synth 8-5587] ROM size for "Judge2_u/dispdata" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "Timer_u/timer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/Buzzer_u/tone_div" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/Buzzer_Mozart/Buzzer_u/tone_div" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/Buzzer_Mozart/clk_250ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/clk_750ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/clk_500ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/clk_250ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/clk_125ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_shine_u/clk_60ms" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element add10_u/count_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:41]
+WARNING: [Synth 8-6014] Unused sequential element Timer_u/count_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Timer.v:33]
+WARNING: [Synth 8-6014] Unused sequential element Timer_u/timer_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Timer.v:29]
+WARNING: [Synth 8-6014] Unused sequential element Buzzer_shine_u/Buzzer_u/cnt_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer.v:31]
+WARNING: [Synth 8-6014] Unused sequential element Buzzer_shine_u/Buzzer_Mozart/Buzzer_u/cnt_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer.v:31]
+WARNING: [Synth 8-6014] Unused sequential element Buzzer_shine_u/Buzzer_Mozart/timer_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer_Mozart.v:44]
+WARNING: [Synth 8-6014] Unused sequential element Buzzer_shine_u/Buzzer_u0/cnt_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/Buzzer.v:31]
+INFO: [Synth 8-5587] ROM size for "KeyIn_u/dispdata" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-6014] Unused sequential element add10_u/count_reg was removed.  [E:/vivado_files/test_module/test_module.srcs/sources_1/new/add10.v:41]
+INFO: [Synth 8-5546] ROM "clk4led" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_1ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_test" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design test_top has unconnected port testleds[3]
+WARNING: [Synth 8-3331] design test_top has unconnected port testleds[2]
+WARNING: [Synth 8-3331] design test_top has unconnected port testleds[1]
+WARNING: [Synth 8-3331] design test_top has unconnected port sw8
+WARNING: [Synth 8-3331] design test_top has unconnected port sw7
+WARNING: [Synth 8-3331] design test_top has unconnected port sw6
+WARNING: [Synth 8-3331] design test_top has unconnected port sw5
+WARNING: [Synth 8-3331] design test_top has unconnected port sw4
+WARNING: [Synth 8-3331] design test_top has unconnected port sw3
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/Judge3_u/keyboard_u/reg_4bit_u/Q_reg[0]' (FD) to 'MODULE_2_u/get_rand2_u/Keyboard/reg_4bit_u/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'MODULE_1_u/Judge2_u/keyboard_u/reg_4bit_u/Q_reg[0]' (FD) to 'MODULE_1_u/get_rand1_u/Keyboard/reg_4bit_u/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'MODULE_1_u/get_rand1_u/Keyboard/reg_4bit_u/Q_reg[1]' (FD) to 'MODULE_1_u/Judge2_u/keyboard_u/reg_4bit_u/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/get_rand2_u/Keyboard/reg_4bit_u/Q_reg[1]' (FD) to 'MODULE_2_u/Judge3_u/keyboard_u/reg_4bit_u/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/Buzzer_shine_u/Buzzer_Mozart/SW_reg[7]' (FD) to 'MODULE_2_u/Buzzer_shine_u/Buzzer_Mozart/SW_reg[6]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/Buzzer_shine_u/Buzzer_Mozart/SW_reg[6]' (FD) to 'MODULE_1_u/Buzzer_shine_u/Buzzer_Mozart/SW_reg[6]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/Buzzer_shine_u/SW_reg[7]' (FDSE) to 'MODULE_2_u/Buzzer_shine_u/SW_reg[6]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/Buzzer_shine_u/SW_reg[6]' (FDSE) to 'MODULE_2_u/Buzzer_shine_u/SW_reg[4]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/Buzzer_shine_u/SW_reg[4]' (FDSE) to 'MODULE_2_u/Buzzer_shine_u/SW_reg[5]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/Buzzer_shine_u/SW_reg[5]' (FDSE) to 'MODULE_2_u/Buzzer_shine_u/SW_reg[1]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/Buzzer_shine_u/SW_reg[1]' (FDSE) to 'MODULE_2_u/Buzzer_shine_u/SW_reg[3]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/Buzzer_shine_u/SW_reg[3]' (FDSE) to 'MODULE_2_u/Buzzer_shine_u/SW_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MODULE_1_u/Buzzer_shine_u/Buzzer_Mozart/SW_reg[7]' (FD) to 'MODULE_1_u/Buzzer_shine_u/Buzzer_Mozart/SW_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MODULE_1_u/Buzzer_shine_u/Buzzer_Mozart/SW_reg[6] )
+INFO: [Synth 8-3886] merging instance 'MODULE_1_u/Buzzer_shine_u/SW_reg[7]' (FDSE) to 'MODULE_1_u/Buzzer_shine_u/SW_reg[6]'
+INFO: [Synth 8-3886] merging instance 'MODULE_1_u/Buzzer_shine_u/SW_reg[6]' (FDSE) to 'MODULE_1_u/Buzzer_shine_u/SW_reg[4]'
+INFO: [Synth 8-3886] merging instance 'MODULE_1_u/Buzzer_shine_u/SW_reg[4]' (FDSE) to 'MODULE_1_u/Buzzer_shine_u/SW_reg[5]'
+INFO: [Synth 8-3886] merging instance 'MODULE_1_u/Buzzer_shine_u/SW_reg[5]' (FDSE) to 'MODULE_1_u/Buzzer_shine_u/SW_reg[1]'
+INFO: [Synth 8-3886] merging instance 'MODULE_1_u/Buzzer_shine_u/SW_reg[1]' (FDSE) to 'MODULE_1_u/Buzzer_shine_u/SW_reg[3]'
+INFO: [Synth 8-3886] merging instance 'MODULE_1_u/Buzzer_shine_u/SW_reg[3]' (FDSE) to 'MODULE_1_u/Buzzer_shine_u/SW_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/Judge3_u/keyboard_u/reg_4bit_u/Q_reg[2]' (FD) to 'MODULE_2_u/get_rand2_u/Keyboard/reg_4bit_u/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/Judge3_u/keyboard_u/reg_4bit_u/Q_reg[3]' (FD) to 'MODULE_2_u/get_rand2_u/Keyboard/reg_4bit_u/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'MODULE_1_u/Judge2_u/keyboard_u/reg_4bit_u/Q_reg[2]' (FD) to 'MODULE_1_u/get_rand1_u/Keyboard/reg_4bit_u/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MODULE_1_u/Judge2_u/keyboard_u/reg_4bit_u/Q_reg[3]' (FD) to 'MODULE_1_u/get_rand1_u/Keyboard/reg_4bit_u/Q_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/get_rand2_u/Keyboard/Key_num_reg[3]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/get_rand2_u/Keyboard/Key_num_reg[2]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/get_rand2_u/Keyboard/Key_num_reg[1]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/get_rand2_u/Keyboard/Key_num_reg[0]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/get_rand2_u/Keyboard/Add_num_reg[1]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/get_rand2_u/Keyboard/Add_num_reg[0]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/add10_u/reg_S_u/S_reg[11]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/add10_u/reg_S_u/S_reg[10]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/add10_u/reg_S_u/S_reg[9]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/add10_u/reg_S_u/S_reg[8]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/add10_u/reg_S_u/S_reg[7]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/add10_u/reg_S_u/S_reg[6]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/add10_u/reg_S_u/S_reg[5]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/add10_u/reg_S_u/S_reg[4]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/add10_u/reg_S_u/S_reg[3]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/add10_u/reg_S_u/S_reg[2]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/add10_u/reg_S_u/S_reg[1]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/add10_u/reg_S_u/S_reg[0]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/Judge3_u/keyboard_u/Add_num_reg[1]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/Judge3_u/keyboard_u/Add_num_reg[0]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/Judge3_u/keyboard_u/choose4rand_reg[1]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/Judge3_u/keyboard_u/choose4rand_reg[0]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/get_rand1_u/Keyboard/Key_num_reg[3]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/get_rand1_u/Keyboard/Key_num_reg[2]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/get_rand1_u/Keyboard/Key_num_reg[1]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/get_rand1_u/Keyboard/Key_num_reg[0]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/get_rand1_u/Keyboard/Add_num_reg[1]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/get_rand1_u/Keyboard/Add_num_reg[0]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[15]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[14]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[13]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[12]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[11]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[10]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[9]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[8]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[7]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[6]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[5]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[4]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[3]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[2]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[1]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/add10_u/reg_S_u/S_reg[0]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/Judge2_u/keyboard_u/Add_num_reg[1]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/Judge2_u/keyboard_u/Add_num_reg[0]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/Judge2_u/keyboard_u/choose4rand_reg[1]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/Judge2_u/keyboard_u/choose4rand_reg[0]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_Adder_u/KeyIn_u/keyboard_u/choose4rand_reg[1]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_Adder_u/KeyIn_u/keyboard_u/choose4rand_reg[0]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_Adder_u/KeyIn_u/ENs_reg[0]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/Buzzer_shine_u/Buzzer_Mozart/SW_reg[6]) is unused and will be removed from module test_top.
+INFO: [Synth 8-3886] merging instance 'MODULE_1_u/get_rand1_u/Keyboard/reg_4bit_u/Q_reg[0]' (FD) to 'MODULE_2_u/get_rand2_u/Keyboard/reg_4bit_u/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/Judge3_u/keyboard_u/reg_4bit_u/Q_reg[1]' (FD) to 'MODULE_1_u/Judge2_u/keyboard_u/reg_4bit_u/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/get_rand2_u/Keyboard/reg_4bit_u/Q_reg[0]' (FD) to 'MODULE_Adder_u/KeyIn_u/keyboard_u/reg_4bit_u/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'MODULE_Adder_u/KeyIn_u/keyboard_u/reg_4bit_u/Q_reg[1]' (FD) to 'MODULE_1_u/Judge2_u/keyboard_u/reg_4bit_u/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'MODULE_1_u/get_rand1_u/Keyboard/reg_4bit_u/Q_reg[2]' (FD) to 'MODULE_Adder_u/KeyIn_u/keyboard_u/reg_4bit_u/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MODULE_1_u/get_rand1_u/Keyboard/reg_4bit_u/Q_reg[3]' (FD) to 'MODULE_Adder_u/KeyIn_u/keyboard_u/reg_4bit_u/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/get_rand2_u/Keyboard/reg_4bit_u/Q_reg[2]' (FD) to 'MODULE_Adder_u/KeyIn_u/keyboard_u/reg_4bit_u/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MODULE_2_u/get_rand2_u/Keyboard/reg_4bit_u/Q_reg[3]' (FD) to 'MODULE_Adder_u/KeyIn_u/keyboard_u/reg_4bit_u/Q_reg[3]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 732.047 ; gain = 488.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 752.254 ; gain = 508.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 753.992 ; gain = 510.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4765] Removing register instance (\MODULE_2_u/get_rand2_u/Keyboard/RowState_reg[3] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[3] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_2_u/Judge3_u/keyboard_u/RowState_reg[3] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[3] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_1_u/get_rand1_u/Keyboard/RowState_reg[3] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[3] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_1_u/Judge2_u/keyboard_u/RowState_reg[3] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[3] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_2_u/get_rand2_u/Keyboard/RowState_reg[2] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[2] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_2_u/Judge3_u/keyboard_u/RowState_reg[2] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[2] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_1_u/get_rand1_u/Keyboard/RowState_reg[2] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[2] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_1_u/Judge2_u/keyboard_u/RowState_reg[2] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[2] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_2_u/get_rand2_u/Keyboard/RowState_reg[1] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[1] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_2_u/Judge3_u/keyboard_u/RowState_reg[1] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[1] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_1_u/get_rand1_u/Keyboard/RowState_reg[1] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[1] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_1_u/Judge2_u/keyboard_u/RowState_reg[1] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[1] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_2_u/get_rand2_u/Keyboard/RowState_reg[0] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[0] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_2_u/Judge3_u/keyboard_u/RowState_reg[0] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[0] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_1_u/get_rand1_u/Keyboard/RowState_reg[0] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[0] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+INFO: [Synth 8-4765] Removing register instance (\MODULE_1_u/Judge2_u/keyboard_u/RowState_reg[0] ) from module (test_top) as it is equivalent to (\MODULE_Adder_u/KeyIn_u/keyboard_u/RowState_reg[0] ) and driving same net [E:/vivado_files/test_module/test_module.srcs/sources_1/new/keyboard.v:58]
+WARNING: [Synth 8-3332] Sequential element (MODULE_2_u/Buzzer_shine_u/SW_reg[2]) is unused and will be removed from module test_top.
+WARNING: [Synth 8-3332] Sequential element (MODULE_1_u/Buzzer_shine_u/SW_reg[2]) is unused and will be removed from module test_top.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 788.121 ; gain = 544.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 788.121 ; gain = 544.730
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 788.121 ; gain = 544.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 788.121 ; gain = 544.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 788.121 ; gain = 544.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 788.121 ; gain = 544.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 788.121 ; gain = 544.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|test_top    | MODULE_2_u/add10_u/reg_S_u/S_temp_reg[15] | 4      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|test_top    | MODULE_1_u/add10_u/reg_S_u/S_temp_reg[19] | 5      | 4     | NO           | NO                 | YES               | 4      | 0       | 
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |   132|
+|3     |LUT1   |    32|
+|4     |LUT2   |    94|
+|5     |LUT3   |   110|
+|6     |LUT4   |   199|
+|7     |LUT5   |   125|
+|8     |LUT6   |   221|
+|9     |SRL16E |     8|
+|10    |FDRE   |   984|
+|11    |FDSE   |   127|
+|12    |LD     |     4|
+|13    |IBUF   |     8|
+|14    |OBUF   |    29|
+|15    |OBUFT  |     3|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+-----------------+------+
+|      |Instance            |Module           |Cells |
++------+--------------------+-----------------+------+
+|1     |top                 |                 |  2079|
+|2     |  MODULE_1_u        |MODULE_1         |   691|
+|3     |    Buzzer_shine_u  |Buzzer_shine_15  |   400|
+|4     |      Buzzer_Mozart |Buzzer_Mozart_30 |   117|
+|5     |        Buzzer_u    |Buzzer_33        |    54|
+|6     |      Buzzer_u      |Buzzer_31        |    38|
+|7     |      Buzzer_u0     |Buzzer_32        |    38|
+|8     |    Judge2_u        |Judge2           |    95|
+|9     |      KEYNUM_u      |KEYNUM_26        |    10|
+|10    |      keyboard_u    |keyboard_27      |    71|
+|11    |        reg_2bit_u  |reg_2bit_28      |     9|
+|12    |        reg_4bit_u  |reg_4bit_29      |     2|
+|13    |    Timer_u         |Timer_16         |    53|
+|14    |    add10_u         |add10_17         |    59|
+|15    |      reg_A_u       |reg_A_23         |     9|
+|16    |      reg_B_u       |reg_B_24         |    11|
+|17    |      reg_S_u       |reg_S_25         |    26|
+|18    |    get_rand1_u     |get_rand1        |    67|
+|19    |      Keyboard      |keyboard_18      |    27|
+|20    |        reg_2bit_u  |reg_2bit_22      |     6|
+|21    |      rand1_u1      |rand1            |    15|
+|22    |        reg_2bit_u  |reg_2bit_21      |     3|
+|23    |      rand1_u2      |rand1_19         |    15|
+|24    |        reg_2bit_u  |reg_2bit_20      |     3|
+|25    |  MODULE_2_u        |MODULE_2         |   806|
+|26    |    Buzzer_shine_u  |Buzzer_shine     |   404|
+|27    |      Buzzer_Mozart |Buzzer_Mozart    |   119|
+|28    |        Buzzer_u    |Buzzer_14        |    56|
+|29    |      Buzzer_u      |Buzzer           |    38|
+|30    |      Buzzer_u0     |Buzzer_13        |    38|
+|31    |    Judge3_u        |Judge3           |    97|
+|32    |      KEYNUM_u      |KEYNUM_10        |    10|
+|33    |      keyboard_u    |keyboard_11      |    69|
+|34    |        reg_2bit_u  |reg_2bit_12      |    12|
+|35    |    Timer_u         |Timer            |    54|
+|36    |    add10_u         |add10_1          |    69|
+|37    |      reg_A_u       |reg_A_7          |     8|
+|38    |      reg_B_u       |reg_B_8          |    12|
+|39    |      reg_S_u       |reg_S_9          |    36|
+|40    |    get_rand2_u     |get_rand2        |   135|
+|41    |      Keyboard      |keyboard_2       |    33|
+|42    |        reg_2bit_u  |reg_2bit_6       |     6|
+|43    |      rand1_u1      |rand2            |    37|
+|44    |        reg_2bit_u  |reg_2bit_5       |     5|
+|45    |      rand1_u2      |rand2_3          |    39|
+|46    |        reg_2bit_u  |reg_2bit_4       |     5|
+|47    |  MODULE_Adder_u    |MODULE_Adder     |   347|
+|48    |    KeyIn_u         |KeyIn            |   222|
+|49    |      KEYNUM_u      |KEYNUM           |    10|
+|50    |      keyboard_u    |keyboard         |   126|
+|51    |        reg_2bit_u  |reg_2bit         |    18|
+|52    |        reg_4bit_u  |reg_4bit         |     8|
+|53    |      reg_24bit_u1  |reg_24bit        |    28|
+|54    |      reg_24bit_u2  |reg_24bit_0      |    28|
+|55    |    add10_u         |add10            |    96|
+|56    |      reg_A_u       |reg_A            |    14|
+|57    |      reg_B_u       |reg_B            |    17|
+|58    |      reg_S_u       |reg_S            |    50|
+|59    |  led_disp_u        |led_disp         |    33|
++------+--------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 788.121 ; gain = 544.730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 91 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 788.121 ; gain = 211.016
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 788.121 ; gain = 544.730
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 144 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+186 Infos, 127 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 788.121 ; gain = 557.898
+INFO: [Common 17-1381] The checkpoint 'E:/vivado_files/test_module/test_module.runs/synth_1/test_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file test_top_utilization_synth.rpt -pb test_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 788.121 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  1 23:59:08 2022...
