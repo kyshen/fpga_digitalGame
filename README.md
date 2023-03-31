@@ -10,8 +10,6 @@ author：kyshen
 
 https://gitee.com/kyshen/dsss
 
-![](./take a look.png)
-
 ## 说明
 
 实验开发板：xc7a35tlftg256-2L
